@@ -1,0 +1,31 @@
+String query = "INSERT INTO person (id, name, phone) VALUES (" + id + ", '" + name + "', '" + phone + "')";
+
+
+
+select person.id,person.name,person.address,person.email,phone.phone from person join phone on person.id = phone.phone_id
+
+
+"INSERT INTO person (id, name,address,phone,email) VALUES ("+id+", '"+name+"', '"+address+"','"+phone+"','"+email+"')";
+
+UPDATE person SET name="Kazi",address="Kakrail",phone="01877458966",email="kazi_89@hotmail.com" WHERE id = 2 
+
+
+
+"UPDATE person SET name="+name+",address='"+address+"',phone='"+phone+"',email='"+email+"' WHERE id = '"+id+"'";
+
+
+
+
+	
+
+if you want to get the data in the entire row, you can use this combination below
+
+tableModel.getDataVector().elementAt(jTable.getSelectedRow());
+
+Where "tableModel" is the model for the table that can be accessed like so
+
+(DefaultTableModel) jTable.getModel();
+
+this will return the entire row data.
+
+I hope this helps somebody
